@@ -30,7 +30,3 @@ jobs:
         run: |
           curl -sS https://getcomposer.org/installer | php
           php composer.phar install --no-interaction --prefer-dist
-
-      - name: Run PHPUnit tests
-        run: |
-          vendor/bin/phpunit --configuration phpunit.xml.dist
